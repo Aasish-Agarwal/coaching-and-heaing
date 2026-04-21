@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-primary" />
-          <span className="font-serif text-lg font-semibold">Meshweta Anand</span>
+          <span className="font-serif text-lg font-semibold">Shweta Anand</span>
         </div>
         
         <div className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Meshweta Anand. All rights reserved.
+          © {new Date().getFullYear()} Shweta Anand. All rights reserved.
         </div>
 
         <div className="flex gap-8 text-sm font-medium">

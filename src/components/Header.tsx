@@ -22,7 +22,7 @@ export default function Header() {
           className="flex items-center gap-2"
         >
           <Sparkles className="w-6 h-6 text-primary" />
-          <span className="font-serif text-xl font-semibold tracking-tight">Meshweta Anand</span>
+          <span className="font-serif text-xl font-semibold tracking-tight">Shweta Anand</span>
         </motion.div>
 
         {/* Desktop Nav */}

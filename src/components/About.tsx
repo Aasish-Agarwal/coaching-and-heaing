@@ -13,7 +13,7 @@ export default function About() {
           className="relative"
         >
           <img 
-            src="https://picsum.photos/seed/nature-peace/800/1200" 
+            src="/images/IMG20260409101613.jpg" 
             alt="Authenticity" 
             className="rounded-3xl warm-shadow w-full aspect-[4/5] object-cover"
             referrerPolicy="no-referrer"
@@ -49,6 +49,17 @@ export default function About() {
             <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Reiki Master</Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Meditation Guide</Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">NLP Practitioner</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
           </div>
         </motion.div>
       </div>

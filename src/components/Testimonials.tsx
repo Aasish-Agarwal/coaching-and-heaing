@@ -4,19 +4,19 @@ import { Quote } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Meshweta has a gift for seeing through the noise. Her sessions helped me find clarity during a major career shift.",
-      author: "Sarah J.",
-      role: "Creative Director"
+      quote: "Connecting with Shweta Maam was like connecting with one of those guiding angels who is always by our side, taking care of ourselves without even being asked for and healing and nourishing us with her pious energy through out.",
+      author: "Sunita Uniyal",
+      role: "Academician"
     },
     {
-      quote: "The energy work was unlike anything I've experienced. I felt a profound sense of peace that lasted for weeks.",
-      author: "David M.",
-      role: "Entrepreneur"
+      quote: "Thank you is a small word for expressing my words for you mam....your sessions were really really helpful for me for past few days I'm feeling like something is out from my body, from past so many months I used to feel like something is sitting on my shoulder, but after talking to you after meeting you after attending your sessions, now I can feel I'm a little relaxed, all becoz of you...Thank you so so so much..for being with me like a friend, best friend, supporter, teacher, angel and a mother ❤️ I love you ❤️❤️I'm grateful that I met you ✨💕",
+      author: "Ishika Saini",
+      role: "Media Professional"
     },
     {
-      quote: "She doesn't just coach; she heals. Her intuitive approach helped me uncover patterns I'd been stuck in for years.",
-      author: "Elena R.",
-      role: "Wellness Practitioner"
+      quote: "She is truly a divine blessing , she helps listens you like your mother , sister , friend.... And tell u the life truths no sugar coating.... I love the healing session with her , once again thank you mam 💕",
+      author: "Harshita Khambra",
+      role: "Hospitality Professional"
     }
   ];
 

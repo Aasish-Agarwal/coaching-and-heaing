@@ -52,8 +52,8 @@ export default function Hero() {
         >
           <div className="relative z-10">
             <img 
-              src="https://picsum.photos/seed/healing-meditation/800/1000" 
-              alt="Meshweta Anand" 
+              src="/images/IMG20260405170928.jpg" 
+              alt="Shweta Anand" 
               className="pill-image warm-shadow w-full max-w-md mx-auto"
               referrerPolicy="no-referrer"
             />
