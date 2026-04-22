@@ -49,11 +49,17 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative aspect-square rounded-full border border-stone-700 flex items-center justify-center"
+              className="relative aspect-square max-w-md mx-auto flex items-center justify-center"
             >
-              <div className="w-3/4 h-3/4 rounded-full border border-stone-800 animate-pulse" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="font-serif text-8xl opacity-10">OM</p>
+              <div className="absolute inset-0 rounded-full border border-stone-700/50" />
+              <div className="absolute inset-4 rounded-full border border-stone-800 animate-[pulse_4s_infinite]" />
+              <div className="w-[85%] h-[85%] rounded-full overflow-hidden relative z-10 border-2 border-stone-800/50">
+                <img 
+                  src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&q=80&w=1000" 
+                  alt="Zen stones and water" 
+                  className="w-full h-full object-cover grayscale opacity-70 hover:opacity-100 transition-opacity duration-1000"
+                  referrerPolicy="no-referrer"
+                />
               </div>
             </motion.div>
           </div>

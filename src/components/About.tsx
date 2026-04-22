@@ -13,7 +13,7 @@ export default function About() {
           className="relative"
         >
           <img 
-            src="/images/IMG20260409101613.jpg" 
+            src="/images/IMG_8769.jpg" 
             alt="Authenticity" 
             className="rounded-3xl warm-shadow w-full aspect-[4/5] object-cover"
             referrerPolicy="no-referrer"
@@ -44,22 +44,19 @@ export default function About() {
             </p>
           </div>
 
+
           <div className="mt-10 flex flex-wrap gap-3">
             <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Certified Life Coach</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Chakra Healing Expert</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Gratitude & Manifestation Coach</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Ho'oponopono Expert</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">EFT Practitioner</Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Reiki Master</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Meditation Guide</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Tarot Coach</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Angel Healing Expert</Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">NLP Practitioner</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">TODO</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Akashic Records Reader</Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm font-normal">Meditation Guide</Badge>
           </div>
         </motion.div>
       </div>

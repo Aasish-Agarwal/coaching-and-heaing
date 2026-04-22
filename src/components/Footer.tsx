@@ -1,15 +1,19 @@
 import { Sparkles, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { useState } from "react";
+import LegalModal from "./LegalModal";
 
 export default function Footer() {
+  const [activeModal, setActiveModal] = useState<"privacy" | "terms" | null>(null);
+
   const socials = [
-    { icon: <Instagram className="w-4 h-4" />, href: "https://www.instagram.com/lifecoachshweta/", label: "Instagram" },
+    { icon: <Instagram className="w-4 h-4" />, href: "https://www.instagram.com/shwetalifecoach/", label: "Instagram" },
     { icon: <Facebook className="w-4 h-4" />, href: "https://www.facebook.com/the.shweta.anand.way#", label: "Facebook" },
-    { icon: <Youtube className="w-4 h-4" />, href: "https://www.youtube.com/channel/UCy4pteQhEE_NmT50IcNsoDA", label: "YouTube" },
+    { icon: <Youtube className="w-4 h-4" />, href: "https://www.youtube.com/@the-shweta-anand-way", label: "YouTube" },
     { icon: <Linkedin className="w-4 h-4" />, href: "https://www.linkedin.com/in/shweta-anand-lion-886aba13/", label: "LinkedIn" },
   ];
 
   return (
-    <footer className="py-12 border-t border-border">
+    <footer className="py-12 border-t border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           <div className="flex items-center gap-2">
@@ -33,8 +37,18 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-8 text-sm font-medium">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <button 
+              onClick={() => setActiveModal("privacy")}
+              className="hover:text-foreground transition-colors cursor-pointer"
+            >
+              Privacy Policy
+            </button>
+            <button 
+              onClick={() => setActiveModal("terms")}
+              className="hover:text-foreground transition-colors cursor-pointer"
+            >
+              Terms of Service
+            </button>
           </div>
         </div>
         
@@ -42,6 +56,20 @@ export default function Footer() {
           © {new Date().getFullYear()} Shweta Anand. All rights reserved.
         </div>
       </div>
+
+      <LegalModal 
+        isOpen={activeModal === "privacy"} 
+        onClose={() => setActiveModal(null)}
+        title="Privacy Policy"
+        type="privacy"
+      />
+      
+      <LegalModal 
+        isOpen={activeModal === "terms"} 
+        onClose={() => setActiveModal(null)}
+        title="Terms of Service"
+        type="terms"
+      />
     </footer>
   );
 }

@@ -39,8 +39,10 @@ export default function Header() {
               {item.name}
             </motion.a>
           ))}
-          <Button variant="outline" className="rounded-full px-6">
-            Book a Session
+          <Button variant="outline" className="rounded-full px-6" asChild>
+            <a href="https://calendly.com/wianinternational/1on1" target="_blank" rel="noopener noreferrer">
+              Book a Session
+            </a>
           </Button>
         </nav>
 

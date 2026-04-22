@@ -35,11 +35,15 @@ export default function Hero() {
             I help high-achievers and seekers navigate life transitions, heal emotional wounds, and align with their soul's purpose through authentic energy work and intuitive coaching.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="rounded-full px-8 h-14 text-lg">
-              Start Your Journey
+            <Button size="lg" className="rounded-full px-8 h-14 text-lg" asChild>
+              <a href="https://calendly.com/wianinternational/1on1" target="_blank" rel="noopener noreferrer">
+                Start Your Journey
+              </a>
             </Button>
-            <Button size="lg" variant="ghost" className="rounded-full px-8 h-14 text-lg group">
-              Learn More <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button size="lg" variant="ghost" className="rounded-full px-8 h-14 text-lg group" asChild>
+              <a href="#about">
+                Learn More <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
         </motion.div>
@@ -52,7 +56,7 @@ export default function Hero() {
         >
           <div className="relative z-10">
             <img 
-              src="/images/IMG20260405170928.jpg" 
+              src="/images/IMG20260405170928.jpg"  
               alt="Shweta Anand" 
               className="pill-image warm-shadow w-full max-w-md mx-auto"
               referrerPolicy="no-referrer"
