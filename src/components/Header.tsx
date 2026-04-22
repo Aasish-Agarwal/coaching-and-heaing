@@ -23,7 +23,7 @@ export default function Header() {
         >
           <Sparkles className="w-6 h-6 text-primary" />
           <span className="font-serif text-xl font-semibold tracking-tight">
-Women In Action Now</span>
+Winners In Action Now</span>
         </motion.div>
 
         {/* Desktop Nav */}
