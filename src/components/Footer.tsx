@@ -1,21 +1,45 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 
 export default function Footer() {
+  const socials = [
+    { icon: <Instagram className="w-4 h-4" />, href: "https://www.instagram.com/lifecoachshweta/", label: "Instagram" },
+    { icon: <Facebook className="w-4 h-4" />, href: "https://www.facebook.com/the.shweta.anand.way#", label: "Facebook" },
+    { icon: <Youtube className="w-4 h-4" />, href: "https://www.youtube.com/channel/UCy4pteQhEE_NmT50IcNsoDA", label: "YouTube" },
+    { icon: <Linkedin className="w-4 h-4" />, href: "https://www.linkedin.com/in/shweta-anand-lion-886aba13/", label: "LinkedIn" },
+  ];
+
   return (
     <footer className="py-12 border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex items-center gap-2">
-          <Sparkles className="w-5 h-5 text-primary" />
-          <span className="font-serif text-lg font-semibold">Shweta Anand</span>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-primary" />
+            <span className="font-serif text-lg font-semibold">Shweta Anand</span>
+          </div>
+          
+          <div className="flex gap-6">
+            {socials.map((social) => (
+              <a 
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors p-2 bg-stone-50 rounded-full"
+                aria-label={social.label}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+
+          <div className="flex gap-8 text-sm font-medium">
+            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+          </div>
         </div>
         
-        <div className="text-sm text-muted-foreground">
+        <div className="text-center text-sm text-muted-foreground pt-8 border-t border-border/50">
           © {new Date().getFullYear()} Shweta Anand. All rights reserved.
-        </div>
-
-        <div className="flex gap-8 text-sm font-medium">
-          <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
         </div>
       </div>
     </footer>

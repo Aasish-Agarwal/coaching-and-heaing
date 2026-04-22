@@ -2,9 +2,16 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, Phone, Instagram, Linkedin, Facebook, Youtube } from "lucide-react";
 
 export default function Contact() {
+  const socials = [
+    { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/lifecoachshweta/", label: "Instagram" },
+    { icon: <Facebook className="w-5 h-5" />, href: "https://www.facebook.com/the.shweta.anand.way#", label: "Facebook" },
+    { icon: <Youtube className="w-5 h-5" />, href: "https://www.youtube.com/channel/UCy4pteQhEE_NmT50IcNsoDA", label: "YouTube" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/shweta-anand-lion-886aba13/", label: "LinkedIn" },
+  ];
+
   return (
     <section id="contact" className="py-24 bg-stone-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -26,8 +33,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:meshwetaanand@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
-                    meshwetaanand@gmail.com
+                  <a href="mailto:shweta.anand@wianinternational.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                    shweta.anand@wianinternational.com
                   </a>
                 </div>
               </div>
@@ -43,12 +50,18 @@ export default function Contact() {
               </div>
 
               <div className="flex gap-4 pt-4">
-                <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:scale-110 transition-transform">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:scale-110 transition-transform">
-                  <Linkedin className="w-5 h-5" />
-                </a>
+                {socials.map((social) => (
+                  <a 
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-white rounded-full shadow-sm hover:scale-110 transition-transform text-stone-600 hover:text-stone-900"
+                    aria-label={social.label}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
               </div>
             </div>
           </motion.div>
