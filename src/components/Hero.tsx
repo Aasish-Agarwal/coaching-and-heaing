@@ -32,7 +32,7 @@ export default function Hero() {
             Reconnect with your <span className="serif-italic">inner essence.</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-10 max-w-lg leading-relaxed">
-            I help high-achievers and seekers navigate life transitions, heal emotional wounds, and align with their soul's purpose through authentic energy work and intuitive coaching.
+            WIAN is a unique community designed to help and support women navigate life transitions, heal emotional wounds, and align with their soul's purpose through authentic energy work and intuitive coaching.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="rounded-full px-8 h-14 text-lg" asChild>
@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="relative z-10">
             <img 
               src="/images/IMG20260405170928.jpg"  
-              alt="Shweta Anand" 
+              alt="WIAN" 
               className="pill-image warm-shadow w-full max-w-md mx-auto"
               referrerPolicy="no-referrer"
             />

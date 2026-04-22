@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primary" />
-            <span className="font-serif text-lg font-semibold">Shweta Anand</span>
+            <span className="font-serif text-lg font-semibold">W I A N</span>
           </div>
           
           <div className="flex gap-6">
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
         
         <div className="text-center text-sm text-muted-foreground pt-8 border-t border-border/50">
-          © {new Date().getFullYear()} Shweta Anand. All rights reserved.
+          © {new Date().getFullYear()} WIAN. All rights reserved.
         </div>
       </div>
 

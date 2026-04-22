@@ -41,7 +41,7 @@ export default function LegalModal({ isOpen, onClose, title, type }: LegalModalP
               {type === "privacy" ? (
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   <p className="font-medium text-foreground">Last Updated: April 2026</p>
-                  <p>Your privacy is of the utmost importance to us. This Privacy Policy describes how Shweta Anand ("we", "us", or "our") collects, uses, and shares your personal information when you visit our website or engage in our coaching and healing services.</p>
+                  <p>Your privacy is of the utmost importance to us. This Privacy Policy describes how WIAN ("we", "us", or "our") collects, uses, and shares your personal information when you visit our website or engage in our coaching and healing services.</p>
                   
                   <h3 className="text-foreground font-serif text-xl border-b pb-2 pt-4">1. Information We Collect</h3>
                   <p>We collect information that you provide directly to us through our contact form, including your name, email address, WhatsApp number, and any message you send. When you book a session via Calendly, we may collect booking details and contact info.</p>
@@ -66,10 +66,10 @@ export default function LegalModal({ isOpen, onClose, title, type }: LegalModalP
               ) : (
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   <p className="font-medium text-foreground">Last Updated: April 2026</p>
-                  <p>Welcome to the Shweta Anand Coaching & Healing website. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions.</p>
+                  <p>Welcome to the WIAN's Coaching & Healing website. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions.</p>
                   
                   <h3 className="text-foreground font-serif text-xl border-b pb-2 pt-4">1. Scope of Services</h3>
-                  <p>Shweta Anand provides holistic coaching, energy healing, and spiritual mentoring. These services are intended for personal growth and spiritual development. They are not a substitute for professional medical advice, diagnosis, or treatment.</p>
+                  <p>WIAN provides holistic coaching, energy healing, and spiritual mentoring. These services are intended for personal growth and spiritual development. They are not a substitute for professional medical advice, diagnosis, or treatment.</p>
                   
                   <h3 className="text-foreground font-serif text-xl border-b pb-2 pt-4">2. Booking and Cancellations</h3>
                   <p>All sessions must be booked in advance. If you need to cancel or reschedule, please provide at least 24 hours' notice. Cancellations made with less than 24 hours' notice may be subject to a fee.</p>
@@ -78,10 +78,10 @@ export default function LegalModal({ isOpen, onClose, title, type }: LegalModalP
                   <p>We maintain a sacred and respectful space for all clients. Any behavior deemed disrespectful, harassing, or inappropriate will result in the immediate termination of services without refund.</p>
                   
                   <h3 className="text-foreground font-serif text-xl border-b pb-2 pt-4">4. Intellectual Property</h3>
-                  <p>All content on this website, including text, designs, and images, is the property of Shweta Anand and is protected by copyright laws. You may not reproduce or reuse content without explicit written permission.</p>
+                  <p>All content on this website, including text, designs, and images, is the property of WIAN and is protected by copyright laws. You may not reproduce or reuse content without explicit written permission.</p>
                   
                   <h3 className="text-foreground font-serif text-xl border-b pb-2 pt-4">5. Limitation of Liability</h3>
-                  <p>Under no circumstances shall Shweta Anand be liable for any direct, indirect, incidental, or consequential damages resulting from the use of our services or website.</p>
+                  <p>Under no circumstances shall WIAN be liable for any direct, indirect, incidental, or consequential damages resulting from the use of our services or website.</p>
                 </div>
               )}
             </div>
